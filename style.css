@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.profile-img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(27, 226, 248, 0.51);
+    transform: scaleX(-1);
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.skill-card {
+    height: 150px;
+    /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-card img {
+    width: 80px;
+    /* Fixed width */
+    height: 80px;
+    /* Fixed height */
+    object-fit: contain;
+    /* Keeps aspect ratio */
+    margin-bottom: 15px;
+}
+
+.col-md-3,
+.col-sm-6 {
+    min-width: 200px;
+}
+
+/* Navbar links hover and active styles */
+.navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #004d66 !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #004d66;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+    width: 100%;
+}
+
+/* Optional: highlight active nav link */
+.navbar-nav .nav-link.active {
+    color: #003b4d !important;
+    font-weight: 600;
+}
+
+.btn-info {
+    background-color: #44e3f8;
+    border: none;
+}
+
+.btn-info:hover {
+    border-style: solid;
+    border-color: black;
+}
+
+/*Card Hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(27, 226, 248, 0.697);
+}
+
+#contact a:hover {
+    transform: translateY(-10px);
+    text-shadow: 0 2px 5px rgba(69, 110, 110, 0.546);
+}
+  
